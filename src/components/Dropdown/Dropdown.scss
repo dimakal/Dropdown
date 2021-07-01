@@ -1,0 +1,28 @@
+.Dropdown {
+  //display: inline-block;
+  background: #fff;
+  padding: 10px 40px 12px 20px;
+  border-radius: 32px;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.1s;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 5px;
+
+  &:hover {
+    background: #057def;
+    color: #fff;
+  }
+  
+  &:active {
+    background: #1A53BC;
+  }
+
+  &[disabled] {
+    background: #DADEE7;
+    color: #bcbcbd;
+    pointer-events: none;
+  }
+}

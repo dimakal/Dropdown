@@ -1,0 +1,40 @@
+.Dropdown__listItem {
+  padding: 12px 16px;
+  transition-duration: .1s;
+  position: relative;
+  min-width: 100px;
+
+  &:hover {
+    background: #057def;
+    color: #fff;
+  }
+
+  &:active {
+    background: #1A53BC;
+  }
+
+  &[disabled] {
+    background: #DADEE7;
+    color: #bcbcbd;
+    cursor: default;
+  }
+
+  &.danger {
+    color: #cd4e4e;
+    
+    &:hover {
+      background: #E64E4E;
+      color: #fff;
+    }
+
+    &:active {
+      background: #AF4E4E;
+    }
+
+    &[disabled] {
+      background: #F1F2F6;
+      color: #757575;
+      cursor: default;
+    }
+  }
+}
