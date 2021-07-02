@@ -11,6 +11,10 @@
   white-space: nowrap;
   margin-bottom: 5px;
 
+  &.empty {
+    color: #a9a9a9;
+  }
+
   &:hover {
     background: #057def;
     color: #fff;

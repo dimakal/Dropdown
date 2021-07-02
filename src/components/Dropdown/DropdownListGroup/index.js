@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './DropdownListGroup.scss'
 import DropdownListItem from "../DropdownListItem";
 
@@ -15,6 +15,8 @@ const DropdownListGroup = ({setSelectedItem, group, selectedItem, setIsListOpene
                     danger={group.danger}
                     disabled={item.disabled}
                     setIsListOpened={setIsListOpened}
+                    key={item.id}
+                    selected={item.selected}
                 />)
             }
         </div>

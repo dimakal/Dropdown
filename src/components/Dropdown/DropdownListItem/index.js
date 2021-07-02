@@ -2,10 +2,9 @@ import React, {useState} from 'react'
 import CheckIcon from "../../icons/CheckIcon/CheckIcon";
 import './DropdownListItem.scss'
 
-const DropdownListItem = ({item, setSelectedItem, selectedItem, danger, disabled, setIsListOpened}) => {
+const DropdownListItem = ({item, setSelectedItem, selectedItem, danger, disabled, setIsListOpened, selected}) => {
 
     const [isHoverOrActive, setIsHoverOrActive] = useState(false)
-    const [isChecked, setIsChecked] = useState(false)
 
     let iconColor = '#121211'
 
@@ -19,8 +18,6 @@ const DropdownListItem = ({item, setSelectedItem, selectedItem, danger, disabled
 
     const onSelectItem = (item) => {
         if (disabled) return
-
-        setIsChecked(true)
         setSelectedItem(item)
         setIsListOpened(false)
     }
